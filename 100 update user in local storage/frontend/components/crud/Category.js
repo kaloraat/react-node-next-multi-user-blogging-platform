@@ -71,7 +71,7 @@ const Category = () => {
             if (data.error) {
                 setValues({ ...values, error: data.error, success: false });
             } else {
-                setValues({ ...values, error: false, success: false, name: '', removed: !removed, reload: !reload });
+                setValues({ ...values, error: false, success: true, name: '', removed: false, reload: !reload });
             }
         });
     };
